@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Fale Comigo</title>
+</head>
+<body>
+  <div class="MainContent">
+  <div class="SideBar">
+    <nav>
+      <a href="/landPage.html" class="sideMenu">Home</a>
+      <a href="/about.html" class="sideMenu">Sobre Mim</a>
+      <a href="/formPage.html" class="sideMenu">Fale Comigo</a>
+      <li><a href="" class="subMenu">PlaceHolder 1</a></li>
+    </nav>
+  </div>
+  <div class="parallaxImg"></div>
+  <h1>Fale Comigo</h1>
+  <div class="content">
+    <form id="faleComigo">
+      <fieldset>  
+        <input type="text" name="nome" id="nome" placeholder="Insira seu nome"> <br> 
+        <input type="email" name="email" id="email" placeholder="Email"> <br>
+        <select name="contato" id="contato">
+          <option value="0" disabled selected value>Tipo de contato</option>
+          <option value="1">Informações</option>
+          <option value="2">Comercial</option>
+          <option value="3">Suporte</option>
+        </select><br> 
+        <textarea name="textArea" id="textArea" cols="90" rows="10" placeholder="Digite sua demanda"></textarea><br> 
+        <input type="submit" value="Enviar" id="submit">
+      </fieldset>
+    </form>
+  </div>
+</div>
+</body>
+</html>

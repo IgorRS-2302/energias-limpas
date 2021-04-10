@@ -5,40 +5,172 @@
     font-family: "Roboto";
 }
 
-body, html, main {
-    height: 98%;
+body, html {
+  height: 98%;
 }
 
 html {
-    background-color: #251353;
+  background-color: #251353;
 }
 
-main {
-    padding: 0px;
-    display: flex;
-    align-items: center;
-    max-width: 85%;
-    margin: 0 auto;
-    margin-top: 2%;
+ .MainContent, .SideBar {
+  margin: 0 auto;
+  margin-top: 2%;
 }
 
-#MainContent {
-    background-color: #F2F2F2;
-    color: #333;
-    height: 98%;
-    width: 75%;
+.MainContent {
+  float: left;
+  height: 98%;
+  width: 85%;
+  margin-left: 8%;
+  margin-right: 8%;
+  background-color: #F2F2F2;
+  color: #333;
+  overflow: auto;
 }
 
-#SideContent {
-    color: aliceblue;
-    background-color: #222423;
-    height: 98%;
-    width: 25%;
-    position: sticky;
+.SideBar {
+  float: right;
+  height: 100%;
+  width: 25%;
+  right: 0;
+  margin-top: 0;
+  margin-right: 0;
+  background-color: #222423;
+  color: #ffcf24;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
-.headerImage {  
-    max-width: 100%;  
-    width: 100%;
-    height: 50%;
-}  
+.parallaxImg {
+  background-image: url(https://www.etfstream.com/media/23169/solar-energy-5622969_1920.webp);
+  height: 30%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  width: 75%;
+  text-align: justify;
+}
+
+h1, h2, h3, p {
+  margin: 10px;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+nav a {
+  padding: 0;
+  display: block;
+  font-size: 1em;
+  text-decoration: none;
+  padding-left: 50px;
+  margin: 20px 0px;
+  height: 45px;
+  line-height: 45px;
+}
+
+nav .sideMenu {
+  color: #ebb41c;
+}
+
+nav .subMenu {
+  color: #00B1D2;
+}
+
+li {
+  list-style-type: none;
+  font-size: 0.95em;
+  font-style: italic;
+  padding: 0;
+}
+
+.sideMenu, .subMenu {
+  background: linear-gradient(to left,   #222423 50%, #434241 50%) right;
+  background-size: 200%;
+  transition: .3s ease-out;
+}
+
+.sideMenu:hover {
+    background-position: left;
+}
+
+.subMenu:hover {
+  background-position: left;
+}
+
+/* Form Page */
+
+form {
+  width: 80%;
+  background-color: #222423;
+  border-radius: 5px;
+  opacity:  0.9;
+}
+
+label, input, select, textarea {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+label {
+  color: #ffcf24;
+  margin-left: 12%;
+}
+
+#faleComigo {
+  width: 80%;
+  margin: 20px 10% 20px 10%;
+}
+
+#nome, #email, #textArea{
+  width: 75%;
+  margin-left: 12%;
+}
+
+#contato {
+  width: 76%;
+  margin-left: 12%;
+}
+
+#nome, #email, #contato, #textArea {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+#nome, #email, #contato {
+  height: 30px;
+}
+
+fieldset {
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+#submit {
+  margin-left: 12%;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #00B1D2;
+  box-shadow: 0 2px #7a7a7a;
+  border: none;
+  outline: none;
+}
+
+#submit:hover {
+  background-color: #00a1bf;
+}
+
+#submit:active {
+  background-color: #00a1bf;
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
