@@ -55,10 +55,15 @@ html {
 .content {
   width: 75%;
   text-align: justify;
+  margin-top: 20px;
 }
 
-h1, h2, h3, p {
+h1, h2, h3 {
   margin: 10px;
+}
+
+p {
+  margin: 10px 10% 10px 10%;
 }
 
 h3 {
@@ -124,9 +129,23 @@ label {
   margin-left: 12%;
 }
 
+#informativo {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
 #faleComigo {
-  width: 80%;
-  margin: 20px 10% 20px 10%;
+  width: 45%;
+  margin: 20px 10% 20px 26%;
+}
+
+#faixa {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #D4AF37;
+  padding: 1px;
+  text-align: center;
+  font-weight: bold;
 }
 
 #nome, #email, #textArea{
@@ -160,7 +179,7 @@ fieldset {
   border-radius: 5px;
   cursor: pointer;
   background-color: #00B1D2;
-  box-shadow: 0 2px #7a7a7a;
+  box-shadow: 0 1px #7a7a7a;
   border: none;
   outline: none;
 }

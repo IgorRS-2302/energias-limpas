@@ -14,23 +14,30 @@
       <a href="/landPage.html" class="sideMenu">Home</a>
       <a href="/about.html" class="sideMenu">Sobre Mim</a>
       <a href="/formPage.html" class="sideMenu">Fale Comigo</a>
-      <li><a href="" class="subMenu">PlaceHolder 1</a></li>
+      <li><a href="#faleComigo" class="subMenu">Formulário</a></li>
     </nav>
   </div>
   <div class="parallaxImg"></div>
   <h1>Fale Comigo</h1>
   <div class="content">
+    <p id="informativo">No formulário abaixo, você poderá enviar um Email para mim com sujestões, dúvidas, ou tratar de assuntos comerciais.</p>
     <form id="faleComigo">
+      <div id="faixa"><p>Formulário de Contato</p></div>
       <fieldset>  
-        <input type="text" name="nome" id="nome" placeholder="Insira seu nome"> <br> 
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" placeholder="Insira seu nome"> <br>
+        <label for="email">Email</label>
         <input type="email" name="email" id="email" placeholder="Email"> <br>
+        <label for="contato">Contato</label>
         <select name="contato" id="contato">
           <option value="0" disabled selected value>Tipo de contato</option>
           <option value="1">Informações</option>
           <option value="2">Comercial</option>
           <option value="3">Suporte</option>
+          <option value="4">Sujestões</option>
         </select><br> 
-        <textarea name="textArea" id="textArea" cols="90" rows="10" placeholder="Digite sua demanda"></textarea><br> 
+        <label for="textArea">Mensagem</label>
+        <textarea name="textArea" id="textArea" cols="50" rows="10" placeholder="Digite sua demanda"></textarea><br> 
         <input type="submit" value="Enviar" id="submit">
       </fieldset>
     </form>
