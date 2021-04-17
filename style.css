@@ -205,3 +205,27 @@ fieldset {
   height: 50px;
   margin-right: 1%;
 }
+
+/* Responsividade */
+
+@media screen and (max-width: 768px) {
+  .SideBar {
+      width: 25%;
+      white-space: nowrap;
+  }
+
+  .sideMenu, .subMenu {
+      padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .SideBar {
+      width: 28%;
+      white-space: nowrap;
+  }
+
+  .sideMenu, .subMenu {
+      padding-left: 10px;
+  }
+}
